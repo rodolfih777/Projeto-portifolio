@@ -31,12 +31,18 @@ body{
 }
 
 header{
-  background-color: var(--destaque);
-  color: var(--texto);
-  padding: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+ 
+ 
+  
 }
 
 nav#menu ul{
@@ -203,9 +209,73 @@ article h2{
   font-weight: bold;
   color: var(--texto);
 }
+#projeto-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap:20px;
+}
+
+#projeto-container .projeto{
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ background-color: var(--fundo-principal);
+ padding: 10px;
+ border-radius: 8px;
+ border-left: 5px solid var(--fundo-principal);
+ transition: border-color 0.5s, border-width 0.5s ;
+}
+
+#projeto-container .projeto:hover{
+  border-color:var(--destaque);
+  border-left-width:15px ;
+  cursor: pointer;
+}
+
+#projeto-container .foto{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+footer a{
+  color: var(--texto-inverso);
+  text-decoration: none;
+  transition: color 0.5s;
+
+}
+
+footer a:hover{
+  color: var(--destaque-inverso);
+  cursor: pointer;
+}
 
 @media screen and (min-width:768px){
   #skill-container{
     grid-template-columns: 1fr 1fr;
+  }
+
+  #projeto-container .projeto{
+    flex-direction: row-reverse ;
+    justify-content: space-between;
+  }
+
+  #projeto-container .projeto-info{
+    max-width: 80%;
+  }
+
+  #projeto-container .foto{
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }

@@ -14,15 +14,16 @@
   <header>
     <nav id="menu">
       <ul>
-        <li><a href="#">
-        <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#ficha" class="link"><a href="#"><i class="fa-solid fa-house"></i></a></li>
 
-        </a></li>
-        <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
+      
+        <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
 
-        <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
+        <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
 
-        <li><a href="#"><i class="fa-regular fa-moon"></i></a></li>
+        
+
+        <li><a href="#" id="botao-tema"><i class="fa-regular fa-moon"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -66,7 +67,7 @@
 
         <div id="skill-container">
 
-          <div class="item">
+          <div class="item"> <!--SKILL 1-->
             <div class="info">
               <span class="nome">
                 <i class="fa-solid fa-code"></i>HTML5
@@ -81,7 +82,7 @@
             </div>
           </div>
 
-          <div class="item">
+          <div class="item"> <!--SKILL 2-->
             <div class="info">
               <span class="nome">
                 <i class="fa-solid fa-code"></i>CSS3
@@ -96,7 +97,7 @@
             </div>
           </div>
            
-          <div class="item">
+          <div class="item"> <!--SKILL 3-->
             <div class="info">
               <span class="nome">
                 <i class="fa-solid fa-code"></i>JavaScript
@@ -111,7 +112,7 @@
             </div>
           </div>
 
-          <div class="item">
+          <div class="item"> <!--SKILL 4-->
             <div class="info">
               <span class="nome">
                 <i class="fa-solid fa-person"></i>COMUNICAÇAO
@@ -134,19 +135,19 @@
 
         <div id="formacao-container">
 
-          <div class="curso">
-            <p class="periodo">2023 - 2024</p>
+          <div class="curso"> <!--SKILL 5-->
+            <p class="periodo">2024 - 2025</p>
             <h3 class="Instituicao">Dev Club</h3>
             <p class="Titulacao">Dev Full Stack</p>
           </div>
           
-          <div class="curso">
+          <div class="curso"> <!--SKILL 6-->
             <p class="periodo">2025 - 2026</p>
             <h3 class="Instituicao">Curso em video</h3>
             <p class="Titulacao">Dev Full Stack</p>
           </div>
 
-          <div class="curso">
+          <div class="curso"> <!--SKILL 7-->
             <p class="periodo">2025 - 2026</p>
             <h3 class="Instituicao">UNIPDS</h3>
             <p class="Titulacao">ENGENHARIA DE IA APLICADA</p>
@@ -157,13 +158,55 @@
 
       <article id="projetos">
         <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+
+        <div id="projeto-container">
+          <div class="projeto">
+            <img src="imagens/projeto-01-videos.jpg" alt="foto" class="foto">
+            <div class="projeto-info">
+              <p class="periodo"> 2025</p>
+              <h3>Projeto de videos </h3>
+              <p>Projeto construido para treinar a inserçao de um video em nosso site.</p>
+              <details class="descricao">
+                <summary> Saiba mais...</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa, quam iure beatae, omnis excepturi facilis eius quae laboriosam repellendus. Rerum aperiam ab velit, cupiditate voluptate voluptatibus quos dignissimos?</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="projeto">
+            <img src="imagens/projeto-02-cordel.jpg" alt="foto" class="foto">
+            <div class="projeto-info">
+              <p class="periodo"> 2025</p>
+              <h3>Projeto de videos </h3>
+              <p>Projeto construido para treinar efeito paralax em imagem.</p>
+              <details class="descricao">
+                <summary> Saiba mais...</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa, quam iure beatae, omnis excepturi facilis eius quae laboriosam repellendus. Rerum aperiam ab velit, cupiditate voluptate voluptatibus quos dignissimos?</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="projeto">
+            <img src="imagens/projeto-03-android.jpg" alt="foto" class="foto">
+            <div class="projeto-info">
+              <p class="periodo"> 2025</p>
+              <h3>Projeto de videos </h3>
+              <p>Projeto construido para treinar conteudos e imagens dinamicas.</p>
+              <details class="descricao">
+                <summary> Saiba mais...</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste ipsa, quam iure beatae, omnis excepturi facilis eius quae laboriosam repellendus. Rerum aperiam ab velit, cupiditate voluptate voluptatibus quos dignissimos?</p>
+              </details>
+            </div>
+          </div>
+
+        </div>
       </article>
 
     </section>
   </main>
 
   <footer>
-
+  Portifolio desenvolvido por <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-5-de-5-40-horas/aulas/modulo-05-2/modulos/area-de-projetos-do-seu-portfolio/" target="_blank" rel="noopener">Curso Em Video</a> Em 2026
   </footer>
 
   <script src="scripts/script.js"></script>
